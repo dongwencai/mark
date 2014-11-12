@@ -135,10 +135,10 @@ nnoremap <silent> <Plug>MarkClear :call
 "       do a \*; otherwise (\/ is the
 "       most recently used), do a \/.
 
-nnoremap <silent> <leader>* :call <sid>SearchCurrentMark()<cr>
-nnoremap <silent> <leader># :call <sid>SearchCurrentMark("b")<cr>
-nnoremap <silent> <leader>/ :call <sid>SearchAnyMark()<cr>
-nnoremap <silent> <leader>? :call <sid>SearchAnyMark("b")<cr>
+nnoremap <silent> J :call <sid>SearchCurrentMark()<cr>
+nnoremap <silent> K :call <sid>SearchCurrentMark("b")<cr>
+nnoremap <silent> <leader>J :call <sid>SearchAnyMark()<cr>
+nnoremap <silent> <leader>K :call <sid>SearchAnyMark("b")<cr>
 nnoremap <silent> * :if !<sid>SearchNext()<bar>execute "norm! *"<bar>endif<cr>
 nnoremap <silent> # :if !<sid>SearchNext("b")<bar>execute "norm! #"<bar>endif<cr>
 
