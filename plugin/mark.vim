@@ -431,6 +431,7 @@ endfunction
 
 " search current mark
 function! s:SearchCurrentMark(...) " SearchCurrentMark(flags)
+  let s:current_mark_position = ""
 	let flags = ""
 	if a:0 > 0
 		let flags = a:1
